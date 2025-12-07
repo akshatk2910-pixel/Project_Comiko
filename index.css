@@ -1,0 +1,776 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background: linear-gradient(135deg, #150019, #1d002e, #000000);;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #f1f0f5;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+header .logo {
+    font-size: 2.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+header .logo span {
+    color: #5b8cff;  
+}
+
+header .logo:hover {
+    transform: scale(1.05);
+    color: #82b2ff;
+}
+
+
+header .search input {
+    padding: 10px 16px;
+    width: 260px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-size: 15px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s ease;
+}
+
+header .search input::placeholder {
+    color: #d0d0d0;
+}
+
+header .search input:focus {
+    background: rgba(255,255,255,0.25);
+    width: 300px;
+}
+header .search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .search button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #5b8cff, #7f5bff);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(123, 97, 255, 0.4);
+}
+
+header .search button:hover {
+    transform: scale(1.07) translateY(-2px);
+    box-shadow: 0 0 20px rgba(123, 97, 255, 0.8);
+}
+
+header .search button:active {
+    transform: scale(0.97);
+}
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #f1f0f5;
+
+    padding: 6px 10px;
+    transition: 0.3s ease;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    color: #62d491;
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-3px);
+}
+
+
+
+
+.welcome {
+    text-decoration: none;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 40px;
+    background: linear-gradient(135deg, #150019, #1d002e, #000000);
+    color: #f1f0f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.4);
+}
+
+
+.welcome h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.welcome h1 span {
+    color: #5b8cff;
+}
+
+.welcome p {
+    max-width: 900px;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #d9dde4;
+    margin-bottom: 40px;
+}
+
+.s{
+    text-decoration: none;
+}
+.welcome .s {
+    background: linear-gradient(135deg, #5b8cff, #7f5bff);
+    padding: 16px 36px;
+    border-radius: 14px;
+    font-size: 1.35rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 0 18px rgba(123, 97, 255, 0.5);
+    transition: 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.welcome .s:hover {
+    transform: scale(1.08) translateY(-3px);
+    box-shadow: 0 0 28px rgba(123, 97, 255, 0.9);
+}
+.welcome a{
+    text-decoration: none;
+}
+
+
+
+
+.your-comic {
+    padding: 60px 20px;
+
+    background: linear-gradient(to bottom right, #020617, #0f172a, #1e293b);
+    color: #f1f0f5;
+    border-radius: 40px;
+    width: 95%;
+    margin: 40px auto;
+    box-shadow: 0px 8px 28px rgba(0,0,0,0.5);
+}
+
+.your-comic h2 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.need{
+    font-size: 0.85rem;
+}
+
+
+.your-comic-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.ss {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.ss .s {
+    background: rgba(255,255,255,0.08);
+    padding: 14px 18px;
+    width: 160px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.ss .s:hover {
+    background: rgba(255,255,255,0.15);
+    transform: scale(1.07);
+}
+
+.ss strong {
+    color: #fff;
+    font-size: 22px;
+}
+
+.ss .mt {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+.your-card {
+    width: 160px;
+    height: 250px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7d93ff;
+    font-size: 40px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.your-card:hover {
+    border-color: #5b8cff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+
+.your-card::before {
+    content: "+";
+    opacity: 0.5;
+}
+
+
+
+
+.most-recommended{
+    margin: 60px auto;
+    padding: 50px 25px 0 30px;
+    color: #f1f0f5;
+    display: flex;
+    flex-direction: column;
+    }
+
+
+.most-recommended h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.most-recommended .card{
+    width: 205px;
+    height: 295px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s ease;
+    position: relative;
+}
+.most-recommended .card:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+
+.most-recommended .card .t {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    z-index: 5;
+    text-shadow: 0 0 6px rgba(0,0,0,0.7);
+}
+
+.most-recommended .card .m {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    color: #dcdcec;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0; 
+    z-index: 5;
+    transition: 0.3s ease-in-out;
+}
+
+.most-recommended .card:hover .m {
+    opacity: 1;
+    text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    color: white;
+
+}
+.rbh{
+    background-image: url(IMG_8850.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .rbh:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.slr{
+    background-image: url(IMG_8845.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .slr:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.ged{
+    background-image: url(IMG_8846.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .ged:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.omw{
+    background-image: url(IMG_8847.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .omw:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.e{
+    background-image: url(IMG_8849.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .e:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.op{
+    background-image: url(IMG_8851.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .op:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.orv{
+    background-image: url(IMG_8852.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .orv:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.b{
+    background-image: url(IMG_8853.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .b:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.l{
+    background-image: url(IMG_8854.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .l:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.hh{
+    background-image: url(IMG_8860.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .hh:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.bl{
+    background-image: url(IMG_8861.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .bl:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.d{
+    background-image: url(IMG_8862.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .d:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.g{
+    background-image: url(IMG_8863.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .g:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.jk{
+    background-image: url(IMG_8864.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .jk:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+.hni{
+    background-image: url(IMG_8865.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.most-recommended .hni:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 18px rgba(91,140,255,0.6);
+    transform: scale(1.05);
+}
+
+
+
+.card-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer{
+    width: 100%;  
+    bottom: 0;
+    background: linear-gradient(to right, #00093c,#2d0b00);
+    color: #f1f0f5;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 1rem;
+    line-height: 20px;
+
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.logo{
+    font-size: 2.5rem;
+    
+    width: 80px;
+    margin-bottom: 30px;
+
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+.email{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0px;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: #f1f0f5;
+}
+.col h3 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+  header {
+    padding: 18px 25px;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  .welcome h1 {
+    font-size: 2.6rem;
+  }
+
+  .welcome p {
+    font-size: 1.15rem;
+    max-width: 750px;
+  }
+
+  .your-comic-grid {
+    justify-content: center;
+  }
+
+  .most-recommended .card {
+    width: 180px;
+    height: 260px;
+  }
+
+  footer .row {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 6px 8px;
+  }
+
+  .welcome {
+    padding: 80px 20px;
+  }
+
+  .welcome h1 {
+    font-size: 2.2rem;
+  }
+
+  .welcome p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .your-comic-grid,
+  .most-recommended .your-comic-grid {
+    justify-content: center;
+  }
+
+  .your-card,
+  .most-recommended .card {
+    width: 150px;
+    height: 225px;
+  }
+
+  footer {
+    padding: 60px 0 25px;
+  }
+
+  .col {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+  }
+
+  .welcome h1 {
+    font-size: 1.9rem;
+  }
+
+  .welcome p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .welcome .s {
+    padding: 12px 28px;
+    font-size: 1.2rem;
+  }
+
+  .your-comic-grid {
+    gap: 18px;
+  }
+
+  .your-card,
+  .most-recommended .card {
+    width: 130px;
+    height: 200px;
+  }
+
+  .ss {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  footer {
+    border-top-left-radius: 80px;
+  }
+}
+
+
+
+@media (max-width: 430px) {
+
+  .welcome h1 {
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+  }
+
+  .your-card,
+  .most-recommended .card {
+    width: 115px;
+    height: 180px;
+  }
+
+  .ss .s {
+    width: 140px;
+  }
+
+  footer .logo {
+    font-size: 2rem;
+  }
+}

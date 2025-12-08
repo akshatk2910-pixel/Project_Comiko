@@ -185,6 +185,10 @@ nav a:hover {
     transform: scale(1.08) translateY(-3px);
     box-shadow: 0 0 28px rgba(123, 97, 255, 0.9);
 }
+.read a{
+    text-decoration: none;
+    color: white;
+}
 
 
 

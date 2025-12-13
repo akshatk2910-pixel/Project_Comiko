@@ -129,8 +129,23 @@
 
 
 
+<script>
+document.getElementById("searchBox").addEventListener("keyup", function () {
+    let input = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".search .card");
 
+    cards.forEach(card => {
+        let title = card.querySelector(".t").textContent.toLowerCase();
 
+        if (title.includes(input)) {
+            card.style.display = "block";
+        } 
+        else {
+            card.style.display = "none";
+        }
+    });
+});
+</script>
 
 
 </body>
